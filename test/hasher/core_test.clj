@@ -76,3 +76,14 @@
       (hset h "THREE" "GLAD")
       (hset h "FOUR" "DAD")
       (is (= (hload h) 0.5)))))
+
+(deftest hlinear-probing-test
+  (testing "hlinear-probing"
+    (let [n 8
+          h (make-hash n)]
+      (hset h "5" "FIRST")
+      (hset h "C" "SECOND")
+      (hset h "E" "THIRD")
+      (is (= (hget h "5") "FIRST"))
+      (is (= (hget h "C") "SECOND"))
+      (is (= (hget h "E") "THIRD")))))

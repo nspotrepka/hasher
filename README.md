@@ -2,11 +2,7 @@
 
 Hasher is a Clojure library for manipulating fixed-size hash maps using arrays.
 
-Linear probing is employed for hash collisions but remains untested.
-
-I wrote this and then completely forgot that I wrote it, which should show you
-how insignificant this project is to me. Nonetheless, it was a useful endeavor,
-so here it is.
+Linear probing is employed for hash collisions.
 
 ## Setup
 
